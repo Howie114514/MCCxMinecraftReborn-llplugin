@@ -1,5 +1,8 @@
 # MCCxMinecraftReborn plugin for Levilamina
 
+![GitHub License](https://img.shields.io/github/license/Howie114514/MCCxMinecraftReborn-llplugin)
+![GitHub Repo stars](https://img.shields.io/github/stars/Howie114514/MCCxMinecraftReborn-llplugin)
+
 本插件需要配合[行为包](https://github.com/Howie114514/MCCxMinecraftReborn)使用
 
 # 功能
