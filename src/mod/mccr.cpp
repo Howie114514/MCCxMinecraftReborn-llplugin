@@ -127,7 +127,7 @@ bool MCCRMod::enable() {
         .text("syncprop")
         .required("propname", ll::command::ParamKind::String)
         .required("propvalue", ll::command::ParamKind::Bool)
-        .optional("player", ll::command::ParamKind::Player)
+        .required("player", ll::command::ParamKind::Player)
         .execute([](CommandOrigin const& origin, CommandOutput& output, ll::command::RuntimeCommand const& cmd) {
             if (origin.getOriginType() == CommandOriginType::Player) {
                 output.error("玩家不能执行该指令。");

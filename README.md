@@ -1,35 +1,17 @@
-# LeviLamina Mod Template
+# MCCxMinecraftReborn plugin for Levilamina
 
-A LeviLamina mod template
+本插件需要配合[行为包](https://github.com/Howie114514/MCCxMinecraftReborn)使用
 
-This mod is a template for developing LeviLamina mods.
+# 功能
 
-## Install
+### 实现通过指令发送 SetActorData 包修改玩家客户端实体的属性，使得每个玩家的客户端看到的东西能产生差异
 
-Generate a new repository from this template.
+###### （因为用途仅需修改布尔值，所以不编写修改其他类型值的相关程序）
 
-## Usage
+`mccr syncprop <propname> <propvalue> <player>`
 
-Before using this mod template, make sure that you have installed XMake and a Minecraft Bedrock Server with LeviLamina.
+### 实现通过指令发送 SpawnParticleEffect 包向单个玩家发送粒子（类似于 java 版）
 
-1. Clone the new repository into a local folder.
+`mccr particle <particle> <pos:x y z> <player>`
 
-1. Change the mod name and the expected LeviLamina version in `xmake.lua`.
-
-1. Add your code.
-
-1. Run `xmake repo -u` in the root of the repository.
-
-1. Run `xmake` to build the mod.
-
-Now the build is complete at `bin/`.
-
-## Contributing
-
-Ask questions by creating an issue.
-
-PRs accepted.
-
-## License
-
-CC0-1.0 © LiteLDev
+实例：参考[network.ts](https://github.com/Howie114514/MCCxMinecraftReborn/blob/main/scripts/network.ts)
