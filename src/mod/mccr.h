@@ -24,9 +24,7 @@
 #include <memory>
 #include <stdexcept>
 
-
 namespace mccr {
-
 class MCCRMod {
 
 public:
