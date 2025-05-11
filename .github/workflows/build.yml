@@ -2,7 +2,7 @@ on:
   pull_request:
   push:
   workflow_dispatch:
-  
+
 jobs:
   build:
     runs-on: windows-latest
@@ -12,7 +12,7 @@ jobs:
       - uses: xmake-io/github-action-setup-xmake@v1
         # with:
         #   xmake-version: branch@master
-      
+
       - uses: actions/cache@v4
         with:
           path: |
@@ -29,7 +29,11 @@ jobs:
 
       - run: |
           xmake -v -y
-
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ll-lib
+          path: |
+            ${{ env.LOCALAPPDATA }}/.xmake/packages/l/levilamina/1.1.1
       - uses: actions/upload-artifact@v4
         with:
           name: ${{ github.event.repository.name }}-windows-x64-${{ github.sha }}
