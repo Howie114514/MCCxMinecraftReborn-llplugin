@@ -9,6 +9,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - run: echo "path=$Env:localappdata\.xmake\packages\l\levilamina\1.1.1" >> $Env:GITHUB_OUTPUT
+        id: get-path
+
+      - run: echo ${{ steps.get-path.outputs.path }}
+
       - uses: xmake-io/github-action-setup-xmake@v1
         # with:
         #   xmake-version: branch@master
@@ -33,7 +38,7 @@ jobs:
         with:
           name: ll-lib
           path: |
-            ${{ env.LOCALAPPDATA }}/.xmake/packages/l/levilamina/1.1.1
+            ${{ steps.get-path.outputs.path }}
       - uses: actions/upload-artifact@v4
         with:
           name: ${{ github.event.repository.name }}-windows-x64-${{ github.sha }}
