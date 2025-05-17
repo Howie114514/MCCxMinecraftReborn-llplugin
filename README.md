@@ -7,14 +7,6 @@
 
 # 功能
 
-### 实现通过指令发送 SetActorData 包修改玩家客户端实体的属性，使得每个玩家的客户端看到的东西能产生差异
+### 让行为包通过 mccrc 指令使用 json 与脚本通信，实现原版 ScriptAPI 无法实现的发包功能
 
-###### （因为用途仅需修改布尔值，所以不编写修改其他类型值的相关程序）
-
-`mccr syncprop <propname> <propvalue> <player>`
-
-### 实现通过指令发送 SpawnParticleEffect 包向单个玩家发送粒子（类似于 java 版）
-
-`mccr particle <particle> <pos:x y z> <player>`
-
-实例：参考[network.ts](https://github.com/Howie114514/MCCxMinecraftReborn/blob/main/scripts/network.ts)
+实例：参考[plugin.ts](https://github.com/Howie114514/MCCxMinecraftReborn/blob/main/scripts/plugin.ts)
