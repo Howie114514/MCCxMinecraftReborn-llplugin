@@ -1,9 +1,14 @@
 # MCCxMinecraftReborn plugin for Levilamina
 
+![Static Badge](https://img.shields.io/badge/minecraft-1.21.60-purple)
+![Static Badge](https://img.shields.io/badge/Levilamina-1.1.1-purple)
 ![GitHub License](https://img.shields.io/github/license/Howie114514/MCCxMinecraftReborn-llplugin)
-![GitHub Repo stars](https://img.shields.io/github/stars/Howie114514/MCCxMinecraftReborn-llplugin)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/Howie114514/MCCxMinecraftReborn-llplugin)
+![GitHub last commit](https://img.shields.io/github/last-commit/Howie114514/MCCxMinecraftReborn-llplugin)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Howie114514/MCCxMinecraftReborn-llplugin/build.yml)
+![GitHub Repo stars](https://img.shields.io/github/stars/Howie114514/MCCxMinecraftReborn-llplugin?style=flat)
 
-本插件需要配合[行为包](https://github.com/Howie114514/MCCxMinecraftReborn)使用
+本插件实现了突破原版脚本引擎限制以优化[MCCxMinecraftReborn 地图](https://github.com/Howie114514/MCCxMinecraftReborn-llplugin)的游戏体验
 
 # 功能
 
