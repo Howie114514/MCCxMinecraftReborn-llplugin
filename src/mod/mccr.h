@@ -1,5 +1,8 @@
 #pragma once
 
+#define DEBUG_MODE true
+#define VERSION    "1.0.0-beta"
+
 #include "ll/api/mod/NativeMod.h"
 #include <fmt/format.h>
 #include <functional>

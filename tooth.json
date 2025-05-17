@@ -1,23 +1,24 @@
 {
-  "format_version": 2,
-  "tooth": "mccxminecraft-reborn",
-  "version": "1.0.0",
-  "info": {
-    "name": "MCCxMinecraft Reborn",
-    "description": "",
-    "author": "HowieMC",
-    "tags": ["platform:levilamina", "type:mod"]
-  },
-  "asset_url": "My Asset Url",
-  "prerequisites": {
-    "github.com/LiteLDev/LeviLamina": "My LeviLamina Dependency Version"
-  },
-  "files": {
-    "place": [
-      {
-        "src": "mccr-llplugin/*",
-        "dest": "plugins/mccr-llplugin/"
-      }
-    ]
-  }
+	"format_version": 2,
+	"tooth": "mccxminecraft-reborn",
+	"version": "1.0.0",
+	"info": {
+		"name": "MCCxMinecraft Reborn",
+		"description": "",
+		"author": "HowieMC",
+		"tags": ["platform:levilamina", "type:mod"]
+	},
+	"asset_url": "My Asset Url",
+	"prerequisites": {
+		"github.com/LiteLDev/LeviLamina": "My LeviLamina Dependency Version",
+		"github.com/MiracleForest/iListenAttentively-Release": "0.4.2"
+	},
+	"files": {
+		"place": [
+			{
+				"src": "mccr-llplugin/*",
+				"dest": "plugins/mccr-llplugin/"
+			}
+		]
+	}
 }
